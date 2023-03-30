@@ -48,12 +48,10 @@ export default function Sec4({ contectRef }) {
     <View ref={contectRef}>
       <Title data-aos="fade">알려드립니다</Title>
 
-      <Contents>
+      <Contents data-aos="fade" data-aos-delay="200">
         {contents.map((item, i) => {
           return (
             <Content
-              data-aos="fade"
-              data-aos-delay="200"
               key={i}
               isActive={isDrop === i}
               onClick={() => {

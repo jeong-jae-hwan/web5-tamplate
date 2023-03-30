@@ -80,12 +80,10 @@ export default function Sec2({ contectRef }) {
   return (
     <View ref={contectRef}>
       <Title data-aos="fade">전시</Title>
-      <Menus>
+      <Menus data-aos="fade" data-aos-delay="150">
         {menus.map((item, i) => {
           return (
             <Menu
-              data-aos="fade"
-              data-aos-delay="150"
               type="button"
               key={i}
               isActive={isActive === i}
@@ -254,8 +252,8 @@ const Menu = styled.button`
 const Item = styled.li`
   display: flex;
   flex-direction: column;
-  width: 305px;
-  min-width: 300px;
+  width: 295px;
+  min-width: 295px;
 
   @media (max-width: 600px) {
     width: 280px;

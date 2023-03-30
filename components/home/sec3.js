@@ -113,8 +113,8 @@ const Title = styled.h2`
 const Item = styled.li`
   display: flex;
   flex-direction: column;
-  width: 305px;
-  min-width: 300px;
+  width: 295px;
+  min-width: 295px;
 
   @media (max-width: 600px) {
     width: 280px;
